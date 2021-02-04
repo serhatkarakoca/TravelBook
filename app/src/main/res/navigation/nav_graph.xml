@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/travelFragment">
+
+    <fragment
+        android:id="@+id/travelFragment"
+        android:name="com.life4.travelbook.view.TravelFragment"
+        android:label="TravelFragment" >
+        <action
+            android:id="@+id/action_travelFragment_to_travelDetailsFragment"
+            app:destination="@id/travelDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/travelDetailsFragment"
+        android:name="com.life4.travelbook.view.TravelDetailsFragment"
+        android:label="TravelDetailsFragment" >
+        <action
+            android:id="@+id/action_travelDetailsFragment_to_imageApiFragment"
+            app:destination="@id/imageApiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageApiFragment"
+        android:name="com.life4.travelbook.view.ImageApiFragment"
+        android:label="ImageApiFragment" />
+</navigation>
