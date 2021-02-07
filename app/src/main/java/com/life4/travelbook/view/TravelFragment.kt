@@ -1,20 +1,21 @@
 package com.life4.travelbook.view
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.life4.artbook.R
-import com.life4.artbook.databinding.FragmentPlacesBinding
+import com.life4.travelbook.R
+import com.life4.travelbook.databinding.FragmentPlacesBinding
 import com.life4.travelbook.adapter.PlaceRecyclerAdapter
 import com.life4.travelbook.viewmodel.PlaceViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import ir.androidexception.andexalertdialog.AndExAlertDialog
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import javax.inject.Inject
 
@@ -40,7 +41,25 @@ class TravelFragment @Inject constructor(
         override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
             val swipePosition = viewHolder.layoutPosition
             val place = placeRecyclerAdapter.places[swipePosition]
-            viewModel.deletePlace(place)
+
+
+            AndExAlertDialog.Builder(requireContext())
+                 .setTitle("Have you ever been at ${place.name.toUpperCase()}")
+                .setMessage("Do you really want to Delete ?")
+                .setPositiveBtnText("Delete")
+                .setNegativeBtnText("Cancel")
+                .setCancelableOnTouchOutside(false)
+                .setImage(R.drawable.ic_baseline_close_24,15)
+                .setButtonTextColor(R.color.light_red)
+                .OnNegativeClicked {
+                    placeRecyclerAdapter.notifyDataSetChanged()
+                }
+                .OnPositiveClicked {
+                    viewModel.deletePlace(place)
+                }
+
+                .build()
+
         }
 
     }

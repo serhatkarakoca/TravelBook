@@ -11,13 +11,14 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.life4.artbook"
+        applicationId "com.life4.travelbook"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.life4.travelbook.HiltTestRunner"
     }
 
     buildTypes {
@@ -77,7 +78,7 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
     implementation 'com.google.android.material:material:1.3.0-beta01'
-
+    implementation 'com.github.salehyarahmadi:AndExAlertDialog:v1.0.1'
 
     // TestImplementations
     implementation "androidx.test:core:1.3.0"

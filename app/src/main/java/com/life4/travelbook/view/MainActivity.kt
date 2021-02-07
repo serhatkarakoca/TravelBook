@@ -2,7 +2,7 @@ package com.life4.travelbook.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.life4.artbook.R
+import com.life4.travelbook.R
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

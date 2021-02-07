@@ -10,8 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.life4.artbook.R
-import com.life4.artbook.databinding.FragmentImageApiBinding
+import com.life4.travelbook.R
+import com.life4.travelbook.databinding.FragmentImageApiBinding
 import com.life4.travelbook.adapter.ImageRecyclerAdapter
 import com.life4.travelbook.util.Status
 import com.life4.travelbook.viewmodel.PlaceViewModel

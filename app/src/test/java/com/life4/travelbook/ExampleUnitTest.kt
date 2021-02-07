@@ -1,4 +1,4 @@
-package com.life4.artbook
+package com.life4.travelbook
 
 import org.junit.Test
 

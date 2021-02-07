@@ -1,4 +1,4 @@
-package com.life4.artbook
+package com.life4.travelbook
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

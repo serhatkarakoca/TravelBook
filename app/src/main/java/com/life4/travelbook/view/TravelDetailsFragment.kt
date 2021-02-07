@@ -9,9 +9,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.RequestManager
-import com.life4.artbook.R
-import com.life4.artbook.databinding.FragmentPlaceDetailsBinding
-import com.life4.artbook.databinding.FragmentPlacesBinding
+import com.life4.travelbook.R
+import com.life4.travelbook.databinding.FragmentPlaceDetailsBinding
 import com.life4.travelbook.util.Status
 import com.life4.travelbook.viewmodel.PlaceViewModel
 import dagger.hilt.android.AndroidEntryPoint

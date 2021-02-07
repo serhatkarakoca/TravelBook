@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.life4.artbook.R
+import com.life4.travelbook.R
 import com.life4.travelbook.api.RetrofitAPI
 import com.life4.travelbook.repo.PlaceRepository
 import com.life4.travelbook.repo.PlaceRepositoryInterface

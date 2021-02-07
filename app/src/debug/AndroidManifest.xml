@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.life4.travelbook">
+
+
+    <application>
+
+        <activity android:name="com.life4.travelbook.HiltTestActivity"
+            android:exported="false"/>
+    </application>
+
+</manifest>

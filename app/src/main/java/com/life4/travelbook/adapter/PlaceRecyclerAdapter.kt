@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
-import com.life4.artbook.R
+import com.life4.travelbook.R
 import com.life4.travelbook.model.Place
 import javax.inject.Inject
 
