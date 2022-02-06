@@ -12,5 +12,4 @@ Room,
 MVVM,  
 Retrofit,  
 Hilt  
-### Screenshot
-<img src="https://raw.githubusercontent.com/serhatkarakoca/TravelBook/master/travelbook.gif" width=320px/>
+
